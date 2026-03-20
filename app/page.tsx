@@ -1,6 +1,7 @@
 import TopKPIBar from "@/components/marketing/TopKPIBar";
 import HeroSection from "@/components/marketing/HeroSection";
 import VisionAbout from "@/components/marketing/VisionAbout";
+import WhyNow from "@/components/marketing/WhyNow";
 import ValueCards from "@/components/marketing/ValueCards";
 import HowItWorks from "@/components/marketing/HowItWorks";
 import AICompanion from "@/components/marketing/AICompanion";
@@ -17,6 +18,7 @@ export default function Home() {
       <TopKPIBar />
       <HeroSection />
       <VisionAbout />
+      <WhyNow />
       <ValueCards />
       <HowItWorks />
       <AICompanion />
