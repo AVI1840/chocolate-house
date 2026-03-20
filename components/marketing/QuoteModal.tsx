@@ -98,18 +98,36 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  className="text-center py-12"
+                  className="text-center py-10"
                 >
                   <div className="text-6xl mb-4">✅</div>
                   <h3 className="text-2xl font-bold text-chocolate-800 mb-3">
                     הבקשה התקבלה!
                   </h3>
-                  <p className="text-chocolate-600 text-lg mb-2">
-                    נחזור אליך עם הצעה מותאמת בתוך 1-2 ימי עסקים.
+                  <p className="text-chocolate-600 text-lg mb-1">
+                    נחזור אליך עם הצעה מותאמת תוך 48 שעות.
                   </p>
-                  <p className="text-chocolate-400 text-sm mb-8">
+                  <p className="text-chocolate-400 text-sm mb-6">
                     ההצעה תכלול התאמה לסלי גפ״ן הרלוונטיים לבית ספרך.
                   </p>
+
+                  {/* Scheduling link */}
+                  <div className="bg-cream border border-chocolate-200 rounded-2xl px-6 py-4 mb-6 text-start">
+                    <p className="text-chocolate-700 text-sm font-semibold mb-1">
+                      📅 רוצה לקבוע שיחת היכרות עכשיו?
+                    </p>
+                    <p className="text-chocolate-500 text-xs mb-3">
+                      שיחה של 20 דקות עם מנחה מקצועי — בחינם, ללא התחייבות
+                    </p>
+                    <a
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                      className="inline-flex items-center gap-2 bg-chocolate-800 hover:bg-chocolate-900 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-colors"
+                    >
+                      קבע שיחה ← (יתאפשר בקרוב)
+                    </a>
+                  </div>
+
                   <button
                     onClick={onClose}
                     className="bg-accent text-white font-bold px-8 py-3 rounded-xl hover:bg-accent-light transition-colors"
@@ -274,7 +292,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                     {status === "sending" ? "שולח..." : "שלח בקשה"}
                   </button>
                   <p className="text-chocolate-400 text-xs text-center">
-                    ללא התחייבות | נחזור אליך בתוך יום עסקים אחד
+                    מענה תוך 48 שעות | ללא התחייבות | מותאם לסלי גפ״ן שלך
                   </p>
                 </form>
               )}

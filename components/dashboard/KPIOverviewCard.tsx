@@ -15,7 +15,13 @@ export default function KPIOverviewCard() {
 
   return (
     <div className="bg-white rounded-2xl p-6 shadow-sm border border-chocolate-100">
-      <h3 className="text-lg font-bold text-chocolate-800 mb-4">סקירת מדדי SEL</h3>
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="text-lg font-bold text-chocolate-800">סקירת מדדי SEL</h3>
+        <span className="flex items-center gap-1.5 bg-blue-50 border border-blue-200 text-blue-600 text-xs font-semibold px-3 py-1 rounded-full">
+          <span className="w-1.5 h-1.5 inline-block rounded-full bg-blue-500" />
+          עודכן בעקבות פעילות
+        </span>
+      </div>
       <div className="grid grid-cols-3 gap-4">
         {averages.map((avg) => (
           <div key={avg.name} className="text-center p-4 rounded-xl bg-cream">

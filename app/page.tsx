@@ -7,6 +7,7 @@ import ValueCards from "@/components/marketing/ValueCards";
 import HowItWorks from "@/components/marketing/HowItWorks";
 import AICompanion from "@/components/marketing/AICompanion";
 import ProductCard from "@/components/marketing/ProductCard";
+import GefenSteps from "@/components/marketing/GefenSteps";
 import Testimonial from "@/components/marketing/Testimonial";
 import SocialProof from "@/components/marketing/SocialProof";
 import GefenSection from "@/components/marketing/GefenSection";
@@ -41,6 +42,7 @@ export default function Home() {
           <ProductCard />
         </div>
 
+        <GefenSteps />
         <Testimonial />
         <SocialProof />
 
