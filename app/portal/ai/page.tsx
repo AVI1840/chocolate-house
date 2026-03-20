@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { aiResponses } from "@/lib/mock-data";
 import { ChatMessage } from "@/lib/types";
+import ProtocolLibrary from "@/components/portal/ProtocolLibrary";
 
 const promptButtons = [
   "בנה מערך שיעור לעבודת צוות",
@@ -196,6 +197,9 @@ export default function AIPage() {
           </div>
         </div>
       </div>
+
+      {/* Protocol Library */}
+      <ProtocolLibrary />
 
       {/* Handoff Modal */}
       {showHandoff && (
