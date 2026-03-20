@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import DemoBanner from "@/components/portal/DemoBanner";
 
 const navItems = [
   { href: "/portal/dashboard", label: "לוח בקרה", icon: "📊" },
@@ -73,7 +74,10 @@ export default function PortalLayout({
       </aside>
 
       {/* Main content */}
-      <main className="flex-1 p-8 overflow-auto">{children}</main>
+      <main className="flex-1 p-8 overflow-auto">
+        <DemoBanner />
+        {children}
+      </main>
     </div>
   );
 }

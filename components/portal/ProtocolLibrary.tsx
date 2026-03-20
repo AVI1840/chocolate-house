@@ -2,122 +2,113 @@ const protocols = [
   {
     id: "p1",
     title: "פרוטוקול ויסות חושי",
-    badge: "ויסות רגשי",
-    badgeColor: "bg-purple-100 text-purple-800",
+    subtitle: "SEL Level 2 — התערבות מובנית",
     description:
-      "מסגרת התערבות מובנית לתמיכה בתלמידים עם רגישות חושית מוגברת בתוך סביבת למידה קבוצתית.",
-    steps: [
-      "זיהוי טריגרים חושיים בסביבת הכיתה",
-      "יישום טכניקות ויסות עצמי (נשימה, תנועה)",
-      "שילוב כלים חושיים מותאמים אישית",
-      "תיעוד ומעקב בפלטפורמה",
-    ],
-    author: "פותח על ידי מומחי SEL | מאושר קלינית",
-    duration: "8–10 מפגשים",
+      "מסגרת פדגוגית-טיפולית לוויסות חושי בסביבת הכלה. כולל 6 תחנות חוויתיות עם חומרי קקאו, מדדי תגובה ועקרונות ריפוי בעיסוק.",
+    tag: "ויסות רגשי",
+    tagColor: "bg-purple-100 text-purple-700",
+    sessions: 4,
+    suitable: "כיתות ד׳–ו׳, חינוך מיוחד",
+    author: "פותח ע״י מומחי SEL | מאושר ע״י ראמ״ה",
     icon: "🧠",
+    borderColor: "border-purple-200",
+    bgColor: "bg-purple-50",
   },
   {
     id: "p2",
     title: "מערך עבודת צוות מובנה",
-    badge: "עבודת צוות",
-    badgeColor: "bg-blue-100 text-blue-800",
+    subtitle: "SEL Level 1 — תכנית מלאה",
     description:
-      "תכנית פדגוגית להעמקת כישורי שיתוף פעולה, הקשבה ופתרון קונפליקטים בקבוצות שילוב.",
-    steps: [
-      "מיפוי דינמיקה קבוצתית ותפקידים",
-      "פעילויות קבוצתיות מובנות (חקר, יצירה)",
-      "עיבוד רגשי ושיח מודרך לאחר פעילות",
-      "מדידת שיפור בסולם עבודת צוות (ראמ״ה)",
-    ],
-    author: "פותח על ידי מומחי SEL | מאושר מחלקת הכלה",
-    duration: "6–8 מפגשים",
+      "תכנית 8 מפגשים לפיתוח מיומנויות שיתוף פעולה דרך יצירה משותפת. מבוססת על מחקר Bandura לחוסן קבוצתי.",
+    tag: "עבודת צוות",
+    tagColor: "bg-blue-100 text-blue-700",
+    sessions: 8,
+    suitable: "כיתות ב׳–ח׳, כלל המסגרות",
+    author: "פותח ע״י מומחי SEL | מאושר ע״י ראמ״ה",
     icon: "🤝",
+    borderColor: "border-blue-200",
+    bgColor: "bg-blue-50",
   },
   {
     id: "p3",
     title: "התערבות קבוצתית לשייכות",
-    badge: "שייכות",
-    badgeColor: "bg-green-100 text-green-800",
+    subtitle: "SEL Level 3 — פרוטוקול מתקדם",
     description:
-      "פרוטוקול להגברת תחושת שייכות ומניעת בידוד חברתי בקרב תלמידים בסיכון בכיתות שילוב.",
-    steps: [
-      "אבחון ראשוני של תחושת שייכות (שאלון ראמ״ה)",
-      "מעגלי שיח ופעילויות קרבה קבוצתיות",
-      "תרגול מיומנויות ביטוי רגשי וקבלת האחר",
-      "מדידה חוזרת ודוח התקדמות",
-    ],
-    author: "פותח על ידי מומחי SEL | מבוסס פיילוט מבוקר",
-    duration: "10–12 מפגשים",
-    icon: "🫂",
+      "מודל התערבות ייחודי לחיזוק תחושת שייכות בקבוצות שילוב. כולל מפגשי הורים, מדידה מקדימה ו-Human Handoff לפסיכולוג.",
+    tag: "שייכות והכלה",
+    tagColor: "bg-green-100 text-green-700",
+    sessions: 6,
+    suitable: "כיתות שילוב, חינוך מיוחד",
+    author: "פותח ע״י מומחי SEL | מאושר ע״י ראמ״ה",
+    icon: "❤️",
+    borderColor: "border-green-200",
+    bgColor: "bg-green-50",
   },
 ];
 
 export default function ProtocolLibrary() {
   return (
-    <div className="mt-10">
-      {/* Section header */}
+    <div className="mt-8">
       <div className="flex items-center justify-between mb-5">
         <div>
           <h2 className="text-xl font-bold text-chocolate-800">
             ספריית פרוטוקולים פדגוגיים מאושרים
           </h2>
-          <p className="text-chocolate-500 text-sm mt-1">
-            פרוטוקולים מובנים ומאושרים — ניתנים להפעלה ישירה בפלטפורמה
+          <p className="text-chocolate-400 text-sm mt-0.5">
+            פותחו ע״י מומחי SEL | בהלימה לחוזר מנכ״ל 0402 | מדידה מובנית בכל מפגש
           </p>
         </div>
-        <div className="bg-chocolate-800 text-white text-xs font-semibold px-3 py-1.5 rounded-full shrink-0">
-          מאושר מחלקת SEL
+        <div className="bg-chocolate-100 text-chocolate-600 text-xs font-semibold px-3 py-1 rounded-full">
+          {protocols.length} פרוטוקולים זמינים
         </div>
       </div>
 
-      {/* Protocol cards */}
       <div className="grid md:grid-cols-3 gap-5">
-        {protocols.map((protocol) => (
+        {protocols.map((p) => (
           <div
-            key={protocol.id}
-            className="bg-white rounded-2xl border border-chocolate-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow"
+            key={p.id}
+            className={`bg-white rounded-2xl border-2 ${p.borderColor} shadow-sm overflow-hidden hover:shadow-md transition-shadow`}
           >
-            {/* Card header */}
-            <div className="bg-chocolate-50 border-b border-chocolate-100 p-4 flex items-start gap-3">
-              <span className="text-3xl">{protocol.icon}</span>
-              <div>
-                <h3 className="font-bold text-chocolate-800 text-base leading-tight">
-                  {protocol.title}
-                </h3>
-                <span
-                  className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full mt-1 ${protocol.badgeColor}`}
-                >
-                  {protocol.badge}
+            <div className={`${p.bgColor} px-5 pt-5 pb-4`}>
+              <div className="flex items-start justify-between mb-2">
+                <span className="text-3xl">{p.icon}</span>
+                <span className={`text-xs font-semibold px-3 py-1 rounded-full ${p.tagColor}`}>
+                  {p.tag}
                 </span>
               </div>
+              <h3 className="font-bold text-chocolate-800 text-base leading-tight">{p.title}</h3>
+              <p className="text-chocolate-500 text-xs mt-1">{p.subtitle}</p>
             </div>
 
-            {/* Card body */}
-            <div className="p-4">
-              <p className="text-chocolate-600 text-sm mb-4">{protocol.description}</p>
+            <div className="px-5 py-4">
+              <p className="text-chocolate-600 text-sm leading-relaxed mb-4">{p.description}</p>
 
-              {/* Steps */}
-              <div className="space-y-2 mb-4">
-                {protocol.steps.map((step, i) => (
-                  <div key={i} className="flex items-start gap-2">
-                    <span className="text-chocolate-400 font-bold text-xs mt-0.5 shrink-0">
-                      {i + 1}.
-                    </span>
-                    <span className="text-chocolate-700 text-xs">{step}</span>
-                  </div>
-                ))}
+              <div className="space-y-1.5 mb-4">
+                <div className="flex items-center gap-2 text-xs text-chocolate-500">
+                  <span>📅</span><span>{p.sessions} מפגשים</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-chocolate-500">
+                  <span>🏫</span><span>{p.suitable}</span>
+                </div>
               </div>
 
-              {/* Footer */}
-              <div className="border-t border-chocolate-100 pt-3 flex items-center justify-between">
-                <p className="text-chocolate-400 text-xs">{protocol.author}</p>
-                <span className="bg-cream text-chocolate-600 text-xs font-medium px-2 py-0.5 rounded-lg">
-                  {protocol.duration}
-                </span>
+              <div className="bg-chocolate-50 border border-chocolate-100 rounded-lg px-3 py-2 mb-4">
+                <p className="text-chocolate-500 text-xs">{p.author}</p>
               </div>
+
+              <button className="w-full bg-chocolate-800 hover:bg-chocolate-700 text-white text-sm font-semibold py-2.5 rounded-xl transition-colors">
+                הפעל פרוטוקול זה
+              </button>
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="mt-5 flex items-center gap-3 bg-chocolate-50 border border-chocolate-100 rounded-xl px-5 py-3">
+        <span className="text-chocolate-400">📋</span>
+        <p className="text-chocolate-500 text-xs">
+          כל הפרוטוקולים עברו התאמה לסטנדרט ראמ״ה | מדידה אוטומטית לאחר כל מפגש | פלט דוח מובנה לגפ״ן
+        </p>
       </div>
     </div>
   );
