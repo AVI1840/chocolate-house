@@ -37,7 +37,7 @@ export default function Navbar() {
 
           {/* Brand — RIGHT in RTL */}
           <Link href="/" className="flex items-center gap-3 shrink-0 group">
-            <div className="relative w-12 h-12 shrink-0 rounded-xl overflow-hidden bg-cream p-1 border border-chocolate-100 group-hover:border-chocolate-300 transition-colors">
+            <div className="relative w-14 h-14 shrink-0 rounded-2xl overflow-hidden bg-cream p-1 border-2 border-chocolate-200 group-hover:border-accent transition-all duration-200 shadow-sm group-hover:shadow-md">
               <Image
                 src="/images/logo.png"
                 alt="מרחב יוצר - המעבדה לקקאו"
@@ -47,10 +47,10 @@ export default function Navbar() {
               />
             </div>
             <div className="leading-tight">
-              <p className="font-extrabold text-chocolate-900 text-base leading-none">
+              <p className="font-extrabold text-chocolate-900 text-lg leading-none tracking-tight">
                 מרחב יוצר
               </p>
-              <p className="text-chocolate-500 text-xs font-medium mt-0.5">
+              <p className="text-chocolate-600 text-xs font-semibold mt-0.5">
                 המעבדה לקקאו
               </p>
               <p className="text-chocolate-400 text-[10px] tracking-widest uppercase leading-none mt-0.5">

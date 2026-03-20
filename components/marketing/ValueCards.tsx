@@ -25,14 +25,24 @@ const values = [
     imageAlt: "ילדים מגוונים צוחקים ויוצרים שוקולד יחד",
   },
   {
-    title: "מיומנויות לחיים",
-    description: "עבודת צוות, תקשורת, פתרון בעיות וחשיבה יצירתית — כישורים שמלוות כל חיים ומשפרים את האקלים הבית-ספרי.",
+    title: "עצמאות ותפקוד",
+    description: "פיתוח תפקוד יומיומי, תכנון עצמי וביצוע משימות עד הסוף. ילדים לומדים לתכנן, לבצע ולסיים — תוך ביטחון עצמי ואחריות אישית.",
+    icon: "🌟",
+    metric: "68%",
+    metricLabel: "שיפור בתפקוד עצמאי",
+    bg: "from-chocolate-700 to-chocolate-600",
+    image: "/images/sel-tactile.png",
+    imageAlt: "ילד מגלגל כדורי שוקולד - עצמאות ותפקוד",
+  },
+  {
+    title: "עבודת צוות",
+    description: "תקשורת, שיתוף פעולה ופתרון בעיות בקבוצה — כישורים חברתיים שמשפרים את האקלים הכיתתי ומפתחים אחריות קבוצתית.",
     icon: "⭐",
     metric: "4.4/5",
     metricLabel: "ממוצע עבודת צוות",
-    bg: "from-chocolate-700 to-chocolate-600",
-    image: "/images/sel-tactile.png",
-    imageAlt: "ילד מגלגל כדורי שוקולד - עבודת ידיים ויצירה",
+    bg: "from-emerald-700 to-emerald-600",
+    image: "/images/sel-praline.png",
+    imageAlt: "ילדים עובדים יחד - שיתוף פעולה",
   },
 ];
 
@@ -50,14 +60,14 @@ export default function ValueCards() {
             למה זה עובד
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-chocolate-800 mb-4">
-            שלושה עמודי יסוד
+            ארבעה ערכי ליבה
           </h2>
           <p className="text-chocolate-500 text-lg max-w-xl mx-auto">
-            למידה רגשית-חברתית דרך עשייה אמיתית — מבוססת נתונים, מדידה ותוצאות
+            עצמאות, שייכות, חוסן ותפקוד — למידה רגשית-חברתית דרך עשייה אמיתית
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value, index) => (
             <motion.div
               key={value.title}

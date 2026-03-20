@@ -33,15 +33,24 @@ export default function HeroSection() {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-24">
           <div className="max-w-2xl">
 
-            {/* Micro-trust line */}
+            {/* Brand identity block — visible in hero */}
             <motion.div
-              initial={{ opacity: 0, y: -16 }}
+              initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-sm font-medium text-chocolate-100 mb-8 backdrop-blur-sm"
+              className="flex items-center gap-4 mb-8"
             >
-              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse shrink-0" />
-              תכנית מאושרת למענה רגשי-חברתי במסגרת גפ״ן
+              <div className="relative w-14 h-14 shrink-0 bg-white/15 backdrop-blur-sm rounded-2xl p-1.5 border border-white/25 shadow-lg">
+                <Image src="/images/logo.png" alt="מרחב יוצר לוגו" fill className="object-contain" />
+              </div>
+              <div>
+                <p className="text-white font-extrabold text-lg leading-none tracking-tight">מרחב יוצר</p>
+                <p className="text-chocolate-300 text-xs font-medium mt-0.5">המעבדה לקקאו · The Cacao Lab</p>
+              </div>
+              <div className="me-auto flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-3 py-1.5 backdrop-blur-sm ms-4">
+                <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse shrink-0" />
+                <p className="text-white text-[11px] font-medium">מאושר | חוזר מנכ״ל 0402</p>
+              </div>
             </motion.div>
 
             {/* Headline */}
@@ -51,9 +60,9 @@ export default function HeroSection() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="text-5xl md:text-7xl font-extrabold leading-tight mb-6"
             >
-              <span className="block text-white">מייצרים שילוב,</span>
-              <span className="block text-transparent bg-clip-text bg-gradient-to-l from-accent to-orange-300 text-6xl md:text-8xl">
-                בונים הצלחה
+              <span className="block text-white">עצמאות, שייכות</span>
+              <span className="block text-transparent bg-clip-text bg-gradient-to-l from-accent to-orange-300 text-5xl md:text-7xl">
+                ותפקוד לכל ילד
               </span>
             </motion.h1>
 
@@ -64,7 +73,7 @@ export default function HeroSection() {
               transition={{ duration: 0.7, delay: 0.22 }}
               className="text-lg md:text-xl text-chocolate-200 mb-10 leading-relaxed max-w-xl"
             >
-              מודל חינוכי-טיפולי מבוסס SEL לשיפור אקלים בית ספרי והכלה —
+              מודל חינוכי-טיפולי מבוסס SEL לפיתוח עצמאות, תפקוד יומיומי וחוסן רגשי —
               עם מדידה לפי מדדי ראמ״ה ודיווח מובנה לגפ״ן.
             </motion.p>
 
