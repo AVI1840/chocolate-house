@@ -4,25 +4,28 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "לראשונה ראיתי תלמיד שלא שיתף פעולה עם אף אחד — עובד כתיסה עם חבר. הרגע הזה שווה כל תכנית.",
+    quote: "לראשונה ראיתי תלמיד שלא שיתף פעולה עם אף אחד — עובד כתיסה עם חבר לצד המיכל. הרגע הזה שווה כל תכנית.",
     name: "שרה כהן",
-    role: "מחנכת כיתה ה׳, בית ספר אורות",
-    city: "נתניה",
-    initials: "ש.כ",
+    role: "מחנכת כיתה ה׳",
+    school: "בית ספר אורות, נתניה",
+    initials: "ש",
+    color: "bg-chocolate-700",
   },
   {
     quote: "הפלטפורמה חסכה לי שעות של עבודה. כל מה שצריך לדיווח לגפ״ן יושב שם מסודר. פשוט עובד.",
     name: "יוסי לוי",
     role: "רכז שילוב",
-    city: "ראשון לציון",
-    initials: "י.ל",
+    school: "בית ספר השקד, ראשון לציון",
+    initials: "י",
+    color: "bg-accent",
   },
   {
-    quote: "ההנהלה ביקשה מספרים — הצגתי גרף לפני/אחרי ברור. המנהלת אמרה: 'תמשיכי, זה עובד'.",
+    quote: "ההנהלה ביקשה מספרים — הצגתי גרף לפני/אחרי ברור. המנהלת אמרה: תמשיכי, זה עובד.",
     name: "מרים אברהם",
-    role: "מרפאה בעיסוק, בי״ס ניר שלום",
-    city: "חדרה",
-    initials: "מ.א",
+    role: "מרפאה בעיסוק",
+    school: "בי״ס ניר שלום, חדרה",
+    initials: "מ",
+    color: "bg-chocolate-600",
   },
 ];
 
@@ -37,11 +40,12 @@ export default function Testimonial() {
           className="text-center mb-14"
         >
           <span className="inline-block bg-chocolate-100 text-chocolate-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-            מה אומרים המשתמשים
+            קולות מהפיילוט
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-chocolate-800">
-            מהשטח
+          <h2 className="text-3xl md:text-4xl font-bold text-chocolate-800 mb-2">
+            מה אומרים מהשטח
           </h2>
+          <p className="text-chocolate-400 text-sm">* ציטוטים מתוך משוב שהתקבל במהלך פיילוט תשפ״ו</p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -52,22 +56,23 @@ export default function Testimonial() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="bg-white rounded-3xl p-8 shadow-sm border border-chocolate-100 hover:shadow-md transition-shadow"
+              className="bg-white rounded-3xl p-8 shadow-sm border border-chocolate-100 hover:shadow-md transition-shadow flex flex-col"
             >
               {/* Quote mark */}
               <div className="text-5xl text-chocolate-200 font-serif leading-none mb-4">&ldquo;</div>
 
-              <p className="text-chocolate-700 leading-relaxed mb-6 text-base">
+              <p className="text-chocolate-700 leading-relaxed mb-6 text-base flex-1">
                 {t.quote}
               </p>
 
               <div className="flex items-center gap-4 pt-4 border-t border-chocolate-100">
-                <div className="w-10 h-10 rounded-full bg-chocolate-800 text-white flex items-center justify-center text-sm font-bold shrink-0">
+                <div className={`w-12 h-12 rounded-2xl ${t.color} text-white flex items-center justify-center text-lg font-extrabold shrink-0`}>
                   {t.initials}
                 </div>
                 <div>
-                  <p className="font-semibold text-chocolate-800">{t.name}</p>
-                  <p className="text-sm text-chocolate-400">{t.role} · {t.city}</p>
+                  <p className="font-bold text-chocolate-800">{t.name}</p>
+                  <p className="text-xs text-chocolate-500 font-medium">{t.role}</p>
+                  <p className="text-xs text-chocolate-400">{t.school}</p>
                 </div>
               </div>
             </motion.div>

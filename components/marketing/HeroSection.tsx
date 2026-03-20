@@ -23,16 +23,10 @@ export default function HeroSection() {
         {/* Gradient overlay — heavy on right (text side in RTL), fades to transparent left */}
         <div className="absolute inset-0 bg-gradient-to-l from-chocolate-900/95 via-chocolate-900/75 to-chocolate-900/20" />
 
-        {/* Logo — top right anchor — prominent brand block */}
-        <div className="absolute top-6 end-6 z-20 flex items-center gap-3 bg-white/15 backdrop-blur-md border border-white/25 rounded-2xl px-5 py-3 shadow-lg">
-          <div className="relative w-14 h-14 shrink-0">
-            <Image src="/images/logo.png" alt="לוגו מרחב יוצר" fill className="object-contain" />
-          </div>
-          <div className="leading-tight">
-            <p className="text-white font-extrabold text-base tracking-tight">מרחב יוצר</p>
-            <p className="text-chocolate-200 text-sm font-medium">המעבדה לקקאו</p>
-            <p className="text-chocolate-400 text-[10px] mt-0.5 tracking-widest uppercase">The Cacao Lab</p>
-          </div>
+        {/* Approval badge — top right (brand is in Navbar) */}
+        <div className="absolute top-6 end-6 z-20 hidden sm:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2">
+          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse shrink-0" />
+          <p className="text-white text-xs font-medium">מאושר | חוזר מנכ״ל 0402 | גפ״ן</p>
         </div>
 
         {/* Main content */}
