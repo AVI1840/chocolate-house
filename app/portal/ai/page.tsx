@@ -204,8 +204,12 @@ export default function AIPage() {
             <h2 className="text-xl font-bold text-chocolate-800 mb-2">
               🧑‍⚕️ התייעצות עם מנחה מקצועי
             </h2>
-            <p className="text-chocolate-500 text-sm mb-6">
+            <p className="text-chocolate-500 text-sm mb-4">
               תאר/י את המקרה בקצרה. הפנייה תועבר למנחה המקצועי של התכנית.
+            </p>
+
+            <p className="text-sm text-green-700 bg-green-50 border border-green-200 rounded-lg px-3 py-2 mb-5">
+              למצבים מורכבים — צוות קליני ופדגוגי זמין לליווי המורה תוך 24 שעות.
             </p>
 
             {handoffSent ? (

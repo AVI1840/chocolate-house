@@ -1,3 +1,4 @@
+import AIAlertCard from "@/components/dashboard/AIAlertCard";
 import KPIOverviewCard from "@/components/dashboard/KPIOverviewCard";
 import ActiveGroups from "@/components/dashboard/ActiveGroups";
 import UpcomingSessions from "@/components/dashboard/UpcomingSessions";
@@ -9,6 +10,7 @@ export default function DashboardPage() {
       <h1 className="text-3xl font-bold text-chocolate-800 mb-8">לוח בקרה</h1>
 
       <div className="space-y-6">
+        <AIAlertCard />
         <KPIOverviewCard />
 
         <div className="grid md:grid-cols-2 gap-6">

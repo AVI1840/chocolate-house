@@ -1,20 +1,24 @@
+import TopKPIBar from "@/components/marketing/TopKPIBar";
 import HeroSection from "@/components/marketing/HeroSection";
 import ValueCards from "@/components/marketing/ValueCards";
 import HowItWorks from "@/components/marketing/HowItWorks";
 import ProductCard from "@/components/marketing/ProductCard";
 import Testimonial from "@/components/marketing/Testimonial";
+import SocialProof from "@/components/marketing/SocialProof";
 import GefenSection from "@/components/marketing/GefenSection";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
+    <main className="pt-11">
+      <TopKPIBar />
       <HeroSection />
       <ValueCards />
       <HowItWorks />
       <ProductCard />
       <Testimonial />
+      <SocialProof />
       <GefenSection />
 
       <footer className="bg-chocolate-900 text-chocolate-300 py-12 px-6">
