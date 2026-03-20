@@ -23,14 +23,15 @@ export default function HeroSection() {
         {/* Gradient overlay — heavy on right (text side in RTL), fades to transparent left */}
         <div className="absolute inset-0 bg-gradient-to-l from-chocolate-900/95 via-chocolate-900/75 to-chocolate-900/20" />
 
-        {/* Logo — top right anchor */}
-        <div className="absolute top-6 end-6 z-20 flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-2.5">
-          <div className="relative w-9 h-9 shrink-0">
+        {/* Logo — top right anchor — prominent brand block */}
+        <div className="absolute top-6 end-6 z-20 flex items-center gap-3 bg-white/15 backdrop-blur-md border border-white/25 rounded-2xl px-5 py-3 shadow-lg">
+          <div className="relative w-14 h-14 shrink-0">
             <Image src="/images/logo.png" alt="לוגו מרחב יוצר" fill className="object-contain" />
           </div>
           <div className="leading-tight">
-            <p className="text-white font-bold text-sm">מרחב יוצר</p>
-            <p className="text-chocolate-300 text-xs">המעבדה לקקאו</p>
+            <p className="text-white font-extrabold text-base tracking-tight">מרחב יוצר</p>
+            <p className="text-chocolate-200 text-sm font-medium">המעבדה לקקאו</p>
+            <p className="text-chocolate-400 text-[10px] mt-0.5 tracking-widest uppercase">The Cacao Lab</p>
           </div>
         </div>
 
@@ -104,23 +105,28 @@ export default function HeroSection() {
               מענה מותאם לבית הספר ולסלי גפ״ן הרלוונטיים | ללא התחייבות
             </motion.p>
 
-            {/* Stats */}
+            {/* Stats — honest pilot data */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.55 }}
-              className="flex gap-8 pt-8 border-t border-white/10"
+              className="pt-8 border-t border-white/10"
             >
-              {[
-                { num: "45+", label: "בתי ספר בפיילוט" },
-                { num: "2,400+", label: "תלמידים" },
-                { num: "87%", label: "שיפור בשייכות" },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <p className="text-2xl font-extrabold text-white">{stat.num}</p>
-                  <p className="text-sm text-chocolate-300">{stat.label}</p>
-                </div>
-              ))}
+              <div className="flex gap-8 mb-2">
+                {[
+                  { num: "8", label: "בתי ספר בפיילוט" },
+                  { num: "420+", label: "תלמידים השנה" },
+                  { num: "87%", label: "שיפור בשייכות" },
+                ].map((stat) => (
+                  <div key={stat.label}>
+                    <p className="text-2xl font-extrabold text-white">{stat.num}</p>
+                    <p className="text-sm text-chocolate-300">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-chocolate-500 text-xs">
+                * נתוני פיילוט ראשוני — תשפ״ו | מוצגים לצורך המחשה בלבד
+              </p>
             </motion.div>
           </div>
         </div>
