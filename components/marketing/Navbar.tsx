@@ -71,6 +71,12 @@ export default function Navbar() {
               </a>
             ))}
             <Link
+              href="/principal"
+              className="px-4 py-2 text-sm font-medium text-chocolate-600 hover:text-chocolate-900 hover:bg-chocolate-50 rounded-lg transition-colors"
+            >
+              🏫 למנהלי ביה״ס
+            </Link>
+            <Link
               href="/portal/dashboard"
               className="px-4 py-2 text-sm font-medium text-chocolate-600 hover:text-chocolate-900 hover:bg-chocolate-50 rounded-lg transition-colors"
             >
@@ -113,6 +119,13 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            <Link
+              href="/principal"
+              onClick={() => setMobileOpen(false)}
+              className="flex items-center gap-2 px-4 py-3 text-base font-medium text-chocolate-700 hover:bg-chocolate-50 rounded-xl transition-colors"
+            >
+              🏫 למנהלי ביה״ס
+            </Link>
             <Link
               href="/portal/dashboard"
               onClick={() => setMobileOpen(false)}

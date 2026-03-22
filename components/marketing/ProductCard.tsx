@@ -52,10 +52,11 @@ export default function ProductCard() {
             <p className="text-chocolate-200 text-base mb-5">
               מבוססת נתונים ו-AI | בהלימה לחוזר מנכ״ל 0402
             </p>
-            <p className="text-4xl font-extrabold text-white">~45,000 ₪</p>
-            <p className="text-chocolate-300 text-sm mt-1">
-              עלות שנתית מוערכת | רישיון מלא ללא הגבלת משתמשים לצוות
-            </p>
+            <div className="mt-2 bg-white/10 border border-white/20 rounded-2xl px-6 py-4 inline-block">
+              <p className="text-chocolate-200 text-sm font-semibold mb-1">מחיר מותאם לפי גודל המוסד</p>
+              <p className="text-2xl font-bold text-white">הצעת מחיר אישית — ללא עלות</p>
+              <p className="text-chocolate-300 text-xs mt-1">ממומן דרך גפ״ן | ללא עלות ישירה לבית הספר</p>
+            </div>
             <div className="mt-4 bg-chocolate-800/60 rounded-xl px-5 py-3 inline-block">
               <p className="text-orange-300 text-sm font-semibold">
                 מאפשר איחוד תקציבי גפ״ן קיימים למענה אחד משולב
